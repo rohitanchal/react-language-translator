@@ -32,8 +32,8 @@ export default function Translator() {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                "x-rapidapi-key": "0e3fb52c5fmsh2d3bb8c0a5646d3p11fb6ejsnee135df67144", // Replace with your actual API key
-                "x-rapidapi-host": "microsoft-translator-text-api3.p.rapidapi.com",
+                "x-rapidapi-key": process.env.REACT_APP_API_KEY,
+                "x-rapidapi-host": process.env.REACT_APP_API_HOST,
             },
             body: JSON.stringify({
                 sep: "|",
